@@ -99,7 +99,7 @@ body {
     max-width: 100%;
   }
 
-  /* Ensure consistent font weights */
+  /* Ensure consistent font weights to prevent shifts */
   .font-bold {
     font-weight: 700;
   }

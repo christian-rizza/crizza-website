@@ -50,7 +50,7 @@ export function Navigation() {
                   <span className="sr-only">Toggle Menu</span>
                 </Button>
               </SheetTrigger>
-              <SheetContent side="left" className="w-80 px-0" data-allow-shifts>
+              <SheetContent side="left" className="w-80 px-0">
                 <div className="flex flex-col h-full">
                   <div className="flex items-center px-6 py-4 border-b">
                     <span className="font-semibold text-lg">Christian Rizza</span>
