@@ -5,15 +5,15 @@ import { Calendar, ExternalLink, Github } from "lucide-react"
 
 const experiments = [
   {
-title: "Exploring Vercel v0: Next-Gen Frontend Experimentation",
-description:
-"An experimental project investigating Vercel v0, focusing on its capabilities for rapid frontend prototyping, AI-powered code generation, and seamless deployment workflows. The experiment documents setup, integration with existing projects, and evaluates developer experience, performance, and scalability.",
-tags: ["Vercel", "Frontend", "AI", "Prototyping", "Deployment"],
-date: "2025-07-01",
-status: "Active",
-github: "#",
-demo: "www.crizza.com"
-}
+      title: "Exploring Vercel v0: Next-Gen Frontend Experimentation",
+      description:
+      "An experimental project investigating Vercel v0, focusing on its capabilities for rapid frontend prototyping, AI-powered code generation, and seamless deployment workflows. The experiment documents setup, integration with existing projects, and evaluates developer experience, performance, and scalability.",
+      tags: ["Vercel", "Frontend", "AI", "Prototyping", "Deployment"],
+      date: "2025-07-01",
+      status: "Active",
+      github: "#",
+      demo: "https://www.crizza.com"
+  }
 ]
 
 export default function ExperimentsPage() {
