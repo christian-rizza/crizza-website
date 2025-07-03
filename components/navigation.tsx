@@ -17,7 +17,7 @@ export function Navigation() {
   const pathname = usePathname()
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/80 backdrop-blur-md supports-[backdrop-filter]:bg-background/60">
+    <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/80 backdrop-blur-md supports-[backdrop-filter]:bg-background/60 min-h-[64px]">
       <div className="container mx-auto px-4">
         <div className="flex h-16 items-center">
           {/* Desktop Navigation - Centered */}
@@ -50,7 +50,7 @@ export function Navigation() {
                   <span className="sr-only">Toggle Menu</span>
                 </Button>
               </SheetTrigger>
-              <SheetContent side="left" className="w-80 px-0">
+              <SheetContent side="left" className="w-80 px-0" data-allow-shifts>
                 <div className="flex flex-col h-full">
                   <div className="flex items-center px-6 py-4 border-b">
                     <span className="font-semibold text-lg">Christian Rizza</span>
