@@ -41,44 +41,44 @@ export function Navigation() {
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-14 items-center">
-        {/* Desktop Navigation */}
-        <div className="mr-4 hidden md:flex">
-          <Link href="/" className="mr-8 flex items-center space-x-2">
-            <div className="mx-7">
+        {/* Desktop Navigation - Centered */}
+        <div className="hidden md:flex w-full justify-center">
+          <nav className="flex items-center space-x-8">
+            <Link href="/" className="flex items-center">
               <Logo />
-            </div>
-          </Link>
-          <nav>
+            </Link>
             <NavLinks />
           </nav>
         </div>
 
         {/* Mobile Navigation */}
-        <Sheet>
-          <SheetTrigger asChild>
-            <Button variant="ghost" className="mr-2 px-0 md:hidden">
-              <Menu className="h-5 w-5" />
-              <span className="sr-only">Toggle Menu</span>
-            </Button>
-          </SheetTrigger>
-          <SheetContent side="left" className="pr-0">
-            <Link href="/" className="flex items-center space-x-2">
-              <Logo />
-              <span className="font-bold">Portfolio</span>
-            </Link>
-            <div className="my-4 h-[calc(100vh-8rem)] pb-10 pl-6">
-              <NavLinks mobile />
-            </div>
-          </SheetContent>
-        </Sheet>
+        <div className="flex w-full items-center justify-between md:hidden">
+          {/* Mobile Toggle Menu - Left Corner */}
+          <Sheet>
+            <SheetTrigger asChild>
+              <Button variant="ghost" className="px-0">
+                <Menu className="h-5 w-5" />
+                <span className="sr-only">Toggle Menu</span>
+              </Button>
+            </SheetTrigger>
+            <SheetContent side="left" className="pr-0">
+              <Link href="/" className="flex items-center space-x-2">
+                <Logo />
+                <span className="font-bold">Portfolio</span>
+              </Link>
+              <div className="my-4 h-[calc(100vh-8rem)] pb-10 pl-6">
+                <NavLinks mobile />
+              </div>
+            </SheetContent>
+          </Sheet>
 
-        {/* Mobile Logo */}
-        <div className="flex flex-1 items-center justify-between space-x-2 md:justify-end">
-          <div className="w-full flex-1 md:w-auto md:flex-none">
-            <Link href="/" className="flex items-center space-x-2 md:hidden">
-              <Logo />
-            </Link>
-          </div>
+          {/* Mobile Logo - Centered */}
+          <Link href="/" className="absolute left-1/2 transform -translate-x-1/2">
+            <Logo />
+          </Link>
+
+          {/* Empty space for balance */}
+          <div className="w-10"></div>
         </div>
       </div>
     </header>
