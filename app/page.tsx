@@ -3,6 +3,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge"
 import { Github, Linkedin, Mail, MapPin } from "lucide-react"
 import Link from "next/link"
+import Image from "next/image"
 
 export default function HomePage() {
   return (
@@ -10,6 +11,18 @@ export default function HomePage() {
       {/* Hero Section */}
       <section className="text-center py-12">
         <div className="max-w-3xl mx-auto">
+          {/* Profile Image */}
+          <div className="mb-8">
+            <Image
+              src="https://avatars.githubusercontent.com/u/8734360"
+              alt="Christian Rizza"
+              width={150}
+              height={150}
+              className="rounded-full mx-auto border-4 border-gray-200 shadow-lg"
+              priority
+            />
+          </div>
+
           <h1 className="text-4xl font-bold tracking-tight sm:text-6xl mb-6">Christian Rizza</h1>
           <p className="text-xl text-muted-foreground mb-8">
             Technical Architect with 10+ years of programming experience across gaming, web, and eCommerce industries. I
