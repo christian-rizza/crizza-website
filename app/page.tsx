@@ -93,7 +93,7 @@ export default function HomePage() {
             </CardHeader>
             <CardContent className="space-y-4">
               <p className="text-muted-foreground">
-                Hi, I'm Christian Rizza, a Technical Architect with over 10 years of programming experience across
+                Hi, I'm Christian Rizza, a Technical Architect with over 15 years of programming experience across
                 gaming, web, and eCommerce industries. I've supported sales managers, delivery teams, and business
                 owners in planning and delivering large digital transformation programs, primarily focused on
                 replatforming e-commerce solutions worldwide.
