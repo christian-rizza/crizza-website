@@ -2,20 +2,10 @@ import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/com
 
 const experiments = [
   {
-    title: "Microservices Framework",
-    description: "Custom framework for building distributed systems with built-in service discovery and load balancing",
-    tech: ["Go", "Docker", "Kubernetes"],
-  },
-  {
-    title: "Real-time Analytics Dashboard",
-    description: "High-performance dashboard for processing and visualizing streaming data",
-    tech: ["React", "WebSocket", "TimescaleDB"],
-  },
-  {
-    title: "CI/CD Pipeline Optimizer",
-    description: "Tool for analyzing and optimizing continuous integration pipelines",
-    tech: ["Python", "GitHub Actions", "AWS"],
-  },
+    title: "Exploring Vercel v0",
+    description: "An experimental project investigating Vercel v0, focusing on its capabilities for rapid frontend prototyping, AI-powered code generation, and seamless deployment workflows. The experiment documents setup, integration with existing projects, and evaluates developer experience, performance, and scalability.",
+    tech: ["Vercel", "Frontend", "Deployment", "AI", "Prototyping"],
+  }
 ]
 
 export default function Experiments() {
