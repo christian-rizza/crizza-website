@@ -2,8 +2,9 @@ import type React from "react"
 import type { Metadata } from "next"
 import { Inter } from "next/font/google"
 import "./globals.css"
-import { Navigation } from "@/components/navigation"
-import { Analytics } from "@vercel/analytics/next"
+import { ThemeProvider } from "@/components/theme-provider"
+import Navigation from "@/components/navigation"
+import { Analytics } from "@vercel/analytics/react"
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import { Suspense } from "react"
 
@@ -15,24 +16,26 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: "Christian Rizza - Technical Architect",
-  description: "Technical experiments and career journey of a software architect",
-  generator: "v0.dev",
+  description: "Technical Architect with 10+ years of programming experience",
+    generator: 'v0.app'
 }
 
 export default function RootLayout({
   children,
-}: {
+}: Readonly<{
   children: React.ReactNode
-}) {
+}>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>
-        <Suspense fallback={<div>Loading...</div>}>
-          <Navigation />
-          <main>{children}</main>
-          <Analytics />
-          <SpeedInsights />
-        </Suspense>
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
+          <Suspense fallback={<div>Loading...</div>}>
+            <Navigation />
+            <main>{children}</main>
+            <Analytics />
+            <SpeedInsights />
+          </Suspense>
+        </ThemeProvider>
       </body>
     </html>
   )
