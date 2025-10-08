@@ -1,5 +1,4 @@
-import { CardDescription } from "@/components/ui/card"
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Calendar, MapPin } from "lucide-react"
 
@@ -74,33 +73,6 @@ const experiences = [
       "Ensured platform stability and performance optimization",
     ],
     technologies: ["Adobe Commerce", "Magento", "API Integration", "Payment Systems", "ERP Integration", "Scrum"],
-  },
-  {
-    title: "Senior Software Architect",
-    company: "Tech Corp",
-    location: "London, UK",
-    duration: "2020 - Present",
-    type: "Full-time",
-    description:
-      "Leading architecture design for cloud-native applications. Mentoring team of 15 developers and establishing best practices for microservices architecture.",
-  },
-  {
-    title: "Lead Developer",
-    company: "Digital Solutions Inc",
-    location: "London, UK",
-    duration: "2017 - 2020",
-    type: "Full-time",
-    description:
-      "Managed development team and oversaw delivery of multiple high-impact projects. Implemented CI/CD pipelines and improved deployment processes.",
-  },
-  {
-    title: "Senior Developer",
-    company: "StartUp Innovations",
-    location: "London, UK",
-    duration: "2014 - 2017",
-    type: "Full-time",
-    description:
-      "Developed scalable web applications and RESTful APIs. Collaborated with product team to define technical requirements and system architecture.",
   },
 ]
 
@@ -234,29 +206,25 @@ export default function ExperiencePage() {
                 <CardContent className="space-y-4">
                   <p className="text-muted-foreground">{exp.description}</p>
 
-                  {exp.achievements && (
-                    <div>
-                      <h4 className="font-semibold mb-2">Key Achievements:</h4>
-                      <ul className="list-disc list-inside space-y-1 text-sm text-muted-foreground">
-                        {exp.achievements.map((achievement, achIndex) => (
-                          <li key={achIndex}>{achievement}</li>
-                        ))}
-                      </ul>
-                    </div>
-                  )}
+                  <div>
+                    <h4 className="font-semibold mb-2">Key Achievements:</h4>
+                    <ul className="list-disc list-inside space-y-1 text-sm text-muted-foreground">
+                      {exp.achievements.map((achievement, achIndex) => (
+                        <li key={achIndex}>{achievement}</li>
+                      ))}
+                    </ul>
+                  </div>
 
-                  {exp.technologies && (
-                    <div>
-                      <h4 className="font-semibold mb-2">Technologies:</h4>
-                      <div className="flex flex-wrap gap-2">
-                        {exp.technologies.map((tech, techIndex) => (
-                          <Badge key={techIndex} variant="secondary" className="text-xs">
-                            {tech}
-                          </Badge>
-                        ))}
-                      </div>
+                  <div>
+                    <h4 className="font-semibold mb-2">Technologies:</h4>
+                    <div className="flex flex-wrap gap-2">
+                      {exp.technologies.map((tech, techIndex) => (
+                        <Badge key={techIndex} variant="secondary" className="text-xs">
+                          {tech}
+                        </Badge>
+                      ))}
                     </div>
-                  )}
+                  </div>
                 </CardContent>
               </Card>
             ))}

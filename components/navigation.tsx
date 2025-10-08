@@ -13,11 +13,11 @@ const navItems = [
   { href: "/experience", label: "Experience", icon: Briefcase },
 ]
 
-export default function Navigation() {
+export function Navigation() {
   const pathname = usePathname()
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-border bg-background/80 backdrop-blur-md supports-[backdrop-filter]:bg-background/60 min-h-[64px]">
+    <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/80 backdrop-blur-md supports-[backdrop-filter]:bg-background/60 min-h-[64px]">
       <div className="container mx-auto px-4">
         <div className="flex h-16 items-center">
           {/* Desktop Navigation - Centered */}
@@ -52,8 +52,8 @@ export default function Navigation() {
               </SheetTrigger>
               <SheetContent side="left" className="w-80 px-0">
                 <div className="flex flex-col h-full">
-                  <div className="flex items-center px-6 py-4 border-b border-border">
-                    <span className="font-semibold text-lg text-foreground">Christian Rizza</span>
+                  <div className="flex items-center px-6 py-4 border-b">
+                    <span className="font-semibold text-lg">Christian Rizza</span>
                   </div>
                   <nav className="flex-1 px-6 py-6">
                     <div className="space-y-2">
