@@ -65,7 +65,7 @@ export default function HomePage() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
           <Card className="text-center">
             <CardHeader>
-              <CardTitle className="text-3xl font-bold">15+</CardTitle>
+              <CardTitle className="text-3xl font-bold">10+</CardTitle>
               <CardDescription>Years Experience</CardDescription>
             </CardHeader>
           </Card>
@@ -77,7 +77,7 @@ export default function HomePage() {
           </Card>
           <Card className="text-center">
             <CardHeader>
-              <CardTitle className="text-3xl font-bold">12</CardTitle>
+              <CardTitle className="text-3xl font-bold">1</CardTitle>
               <CardDescription>Active Experiments</CardDescription>
             </CardHeader>
           </Card>
