@@ -109,11 +109,15 @@ export default function HomePage() {
                   London, UK
                 </div>
                 <div className="flex gap-2">
-                  <Button variant="ghost" size="sm">
-                    <Github className="h-4 w-4" />
+                  <Button variant="ghost" size="sm" asChild>
+                    <a href="https://github.com/christian-rizza" target="_blank" rel="noopener noreferrer">
+                      <Github className="h-4 w-4" />
+                    </a>
                   </Button>
-                  <Button variant="ghost" size="sm">
-                    <Linkedin className="h-4 w-4" />
+                  <Button variant="ghost" size="sm" asChild>
+                    <a href="https://www.linkedin.com/in/christianrizza/" target="_blank" rel="noopener noreferrer">
+                      <Linkedin className="h-4 w-4" />
+                    </a>
                   </Button>
                   <Button variant="ghost" size="sm">
                     <Mail className="h-4 w-4" />
