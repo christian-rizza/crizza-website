@@ -4,7 +4,7 @@ import { Calendar, MapPin } from "lucide-react"
 
 const experiences = [
   {
-    title: "Technical Architect Practice Lead",
+    title: "Head of Architecture",
     company: "Vaimo Europe and Middle East",
     location: "London, UK",
     duration: "Jan 2025 - Present",

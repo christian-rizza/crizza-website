@@ -19,7 +19,7 @@ export default function HomePage() {
                 alt="Christian Rizza"
                 width={150}
                 height={150}
-                className="rounded-full border-4 border-gray-200 shadow-lg"
+                className="rounded-full border-4 border-border shadow-lg"
                 priority
                 placeholder="blur"
                 blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAABAAEDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWGRkqGx0f/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyJckliyjqTzSlT54b6bk+h0R//2Q=="
@@ -71,7 +71,7 @@ export default function HomePage() {
           </Card>
           <Card className="text-center">
             <CardHeader>
-              <CardTitle className="text-3xl font-bold">50+</CardTitle>
+              <CardTitle className="text-3xl font-bold">20+</CardTitle>
               <CardDescription>Projects Delivered</CardDescription>
             </CardHeader>
           </Card>
