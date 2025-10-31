@@ -66,7 +66,7 @@ crizza_website/
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/crizza/v0-personal-website.git
+git clone https://github.com/christian-rizza/personal-website.git
 cd crizza_website
 ```
 
