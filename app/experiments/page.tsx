@@ -11,7 +11,7 @@ const experiments = [
       tags: ["Vercel", "Frontend", "AI", "Prototyping", "Deployment"],
       date: "2025-07-01",
       status: "Active",
-      github: "#",
+      github: "https://github.com/christian-rizza/personal-website",
       demo: "https://www.crizza.com"
   }
 ]
